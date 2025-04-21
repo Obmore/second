@@ -1,5 +1,51 @@
-.venv
-*/__pycache__/
-*/migrations/
+# Virtuális környezet
+.venv/
+venv/
+ENV/
+
+# Python byte‑code
+__pycache__/
 *.pyc
 *.pyo
+*.pyd
+
+# Django migrációk (app‑enként jönnek létre)
+*/migrations/
+**/migrations/
+
+# SQLite adatbázis (ha használod)
+db.sqlite3
+*.sqlite3
+
+# Környezeti változók, local settings
+.env
+.env.*
+local_settings.py
+
+# Pytest cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE‑ és editor‑mellékletek
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# MacOS / Linux / Windows ideiglenes fájlok
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Statikus fájlok és build eredmények
+/staticfiles/
+/static/
+/media/
+
+# Celery beat schedule
+celerybeat-schedule
+
+# Coverage reports
+coverage.xml
